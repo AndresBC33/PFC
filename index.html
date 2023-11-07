@@ -4,22 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    
+    <script src="https://kit.fontawesome.com/4fe4f996dc.js" crossorigin="anonymous"> </script>
+    <!-- CDN de Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundImage: {
+                'cinema': "url('img/Background/bg_ambos.jpg')",
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <h1>INDEX</h1>
-    <h2>Cabecera</h2>
-    <nav> <!--Comun para header en todos-->
-            <li> <a href="search-results.html">Busqueda</a> </li>
+<body class="">
 
+    <header class="text-yellow-300 bg-black border-4 border-red-300 flex justify-between flex-col md:flex-row items-center">
+        <img class="w-80 md:w-32 border-4 border-red-600" src="img/Logo/logo.png" alt="Logo">
+
+        <nav class="border-4 border-red-600 flex"> 
             <li> <a href="favorite.html">Favoritos</a> </li>
             <li> <a href="genres.html">Generos</a> </li>
             <li> <a href="index.html">Home</a> </li>
-    </nav>
-    <h2>Especificos</h2>
-    <nav> <!--Especifico de este html-->
-        <li> <a href="detail-serie.html">Detalle de Serie</a> </li>
-        <li> <a href="detail-movie.html">Detalle de Pelicula</a> </li>
-    </nav>
+        </nav>
+        <form class="border-4 border-red-600 action="">
+            <label class="" for="buscar"> Buscar: </i> </label>
+            <input class="text-black" type="text" name="buscar">
+            <a class="" href="search-results.html"><i class="fa-solid fa-search"></i></a>
+        </form>
+
+
+    </header>
+
+    <main class="bg-cinema">
+        <div class="flex flex-row justify-around md:hidden text-white">
+            <h3 class="">Las + Populares</h3>
+            <h3 class=""">Las + Vistas</h3>
+            <h3 class="">Las Mejor Valoradas</h3>
+        </div>
+        <div class="flex flex-row md:flex-col justify-between">
+        <h3 class="text-white hidden md:contents">Las + Populares</h3>
+        <div class="border-4 border-red-600 flex flex-col md:flex-row flex-nowrap justify-start items-start">
+            <figure class="text-center text-white m-2">
+                <a href="detail-movie.html"><img class="w-30 md:w-40 h-30 md:h-60" src="img/Peliculas/back_future.jpeg" alt=""></a>
+                <h6 class="" >Back to the Future</h6>
+                <h6 class="" >23/12/2009</h6>
+            </figure>
+            <figure class="text-center text-white m-2">
+                <a href="detail-serie.html"><img class="w-30 md:w-40 h-30 md:h-60" src="img/Peliculas/guardians.jpeg" alt=""></a>
+                <h6 class="" >Guardians of the Galaxy</h6>
+                <h6 class="" >13/02/2019</h6>
+            </figure>
+        </div>
+        <h3 class="text-white hidden md:contents">Las + Vistas</h3>
+        <div class="border-4 border-red-600 flex flex-col md:flex-row flex-nowrap justify-start items-start">
+            <figure class="text-center text-white m-2">
+                <a href="detail-serie.html"><img class="w-30 md:w-40 h-30 md:h-60" src="img/Peliculas/hannibal.jpeg" alt=""></a>
+                <h6 class="" >Hannibal Lexter</h6>
+                <h6 class="" >30/01/2015</h6>
+            </figure>
+            <figure class="text-center text-white m-2">
+                <a href="detail-serie.html"><img class="w-30 md:w-40 h-30 md:h-60" src="img/Peliculas/blonde.jpeg" alt=""></a>
+                <h6 class="" >Bloonde</h6>
+                <h6 class="" >31/05/2021</h6>
+            </figure>
+        </div>
+        <h3 class="text-white hidden md:contents">Las Mejor Valoradas</h3>
+        <div class="border-4 border-red-600 flex flex-col md:flex-row flex-nowrap justify-start items-start">
+            <figure class="text-center text-white m-2">
+                <a href="detail.movie.html"><img class="w-30 md:w-40 h-30 md:h-60" src="img/Peliculas/hellboy.jpeg" alt=""></a>
+                <h6 class="" >HellBoy</h6>
+                <h6 class="" >06/07/2020</h6>
+            </figure>
+            <figure class="text-center text-white m-2">
+                <a href="detail.movie.html"><img class="w-30 md:w-40 h-30 md:h-60" src="img/Peliculas/padrino.jpeg" alt=""></a>
+                <h6 class="" >El Padrino</h6>
+                <h6 class="" >22/04/2001</h6>
+            </figure>
+        </div>
+<!--
+        <nav> 
+            <li> <a href="detail-serie.html">Detalle de Serie</a> </li>
+            <li> <a href="detail-movie.html">Detalle de Pelicula</a> </li>
+        </nav>
+-->
+        </div>
+    </main>
+
+    <footer class="text-yellow-300 border-4 border-red-300 bg-black flex justify-between flex-col md:flex-row">
+        <div class="border-4 border-red-600 text-center">
+            <h3>Siguenos en redes sociales</h3>
+            <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
+        </div>
+        <div class="border-4 border-red-600 text-center">
+            <a href="#" target="_blank"> <i class="fa-solid fa-copyright"></i> 2023 ABC Studios</a>
+            <h4 >Andres Blanes Castillo</h4>
+            <h4 >C/Chile 44, Las Rozas de Madrid 28290</h4>
+        </div>
+        <div  class="border-4 border-red-600 text-center">
+        <h3>Contacta con nosotros</h3>        
+            <a href="https://www.whatsup.com" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+            <a href="mailto:ablanes@coit.es" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>
+        </div>
+        
+    </footer>
 
 </body>
 </html>
