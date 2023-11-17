@@ -34,10 +34,9 @@
                 <li class="border-2 border-yellow-600 rounded-xl hover:scale-110"> <a class="p-3" href="favorite.html">Favoritos</a> </li>
                 <li class="border-2 border-yellow-600 rounded-xl ml-5 hover:scale-110"> <a class="p-3" href="genres.html">Generos</a> </li>
                 <li class="border-2 border-yellow-600 rounded-xl ml-5 hover:scale-110"> <a class="p-3" href="index.html">Home</a> </li>
-                <li class="border-2 border-yellow-600 rounded-xl ml-5 hover:scale-110 bg-yellow-200 text-black"> <a class="p-3" href="#">Terror</a> </li>
             </nav>
             <form class="w-full flex flex-row justify-center md:justify-end " action="">
-                <label class="text-yellow-300 mr-2" for="buscar"> Buscar : </i> </label>
+                <label class="mr-2" for="buscar"> Buscar : </i> </label>
                 <input class="bg-yellow-50 text-black mr-2" type="text" name="buscar">
                 <a class="pl-1 pr-2" href="search-results.html"><i class="fa-solid fa-search hover:scale-150"></i></a>
             </form>
@@ -45,40 +44,52 @@
     </header>
 
     <main class="">
-        <h1 class="text-white">Genero: Terror</h1>
-        <div class="flex flex-row justify-around md:hidden text-white">
-            <h3 class="">Peliculas</h3>
-            <h3 class="">Series</h3>
+                
+        <div class="flex justify-center mb-2"> 
+            <p class="border-2 border-yellow-600 rounded-xl ml-5 bg-yellow-200 text-black"> <a class="p-2 md:p-10" href="#">Genero Buscado</a> </p>
+        </div>
+
+
+        <div class="flex flex-row justify-around md:hidden text-yellow-100 font-bold">
+            <h3 class="">Peliculas del Genero</h3>
+            <h3 class="">Series del Genero</h3>
         </div>
         <div class="flex flex-row md:flex-col justify-between">
-        <h3 class="text-white hidden md:contents">Peliculas</h3>
-        <div class=" border-4 border-yellow-600 flex flex-col md:flex-row flex-nowrap justify-start items-start text-xs text-center text-black">
-            <figure class="m-2 bg-yellow-50 rounded-xl">
-                <a href="detail-movie.html"><img class="w-40 md:w-40 h-30 md:h-60 p-0.5 rounded-xl" src="img/Peliculas/back_future.jpeg" alt=""></a>
-                <h6 class="" >Back to the Future</h6>
-                <h6 class="" >23/12/2009</h6>
-            </figure>
-            <figure class="m-2">
-                <a href="detail-serie.html"><img class="w-40 md:w-40 h-30 md:h-60" src="img/Peliculas/guardians.jpeg" alt=""></a>
-                <h6 class="" >Guardians of the Galaxy</h6>
-                <h6 class="" >13/02/2019</h6>
-            </figure>
-        </div>
-        <h3 class="text-white hidden md:contents">Series</h3>
-        <div class="border-4 border-red-600 flex flex-col md:flex-row flex-nowrap justify-start items-start text-xs text-center text-white">
-            <figure class="m-2">
-                <a href="detail-serie.html"><img class="w-40 md:w-40 h-30 md:h-60" src="img/Peliculas/hannibal.jpeg" alt=""></a>
-                <h6 class="" >Hannibal Lexter</h6>
-                <h6 class="" >30/01/2015</h6>
-            </figure>
-            <figure class="m-2">
-                <a href="detail-serie.html"><img class="w-40 md:w-40 h-30 md:h-60" src="img/Peliculas/blonde.jpeg" alt=""></a>
-                <h6 class="" >Bloonde</h6>
-                <h6 class="" >31/05/2021</h6>
-            </figure>
-        </div>
+            <div class="flex justify-start md:ml-3">
+                <h3 class="text-yellow-100 hidden md:contents font-extrabold">Peliculas del Genero</h3>
+            </div>
+            <div class="bg-yellow-200 bg-opacity-30 m-1 border-1 border-yellow-600 rounded-xl flex flex-col md:flex-row flex-nowrap justify-start items-center md:items-start text-xs text-center text-white">
+                <figure class="m-1">
+                    <a href="detail-movie.html"><img class="w-30 md:w-40 h-30 md:h-60 hover:scale-105 rounded-xl" src="img/Peliculas/back_future_II.jpeg" alt=""></a>
+                    <h6 class="" >Batman</h6>
+                    <h6 class="" >23/12/2009</h6>
+                </figure>
+                <figure class="m-1">
+                    <a href="detail-serie.html"><img class="w-30 md:w-40 h-30 md:h-60 hover:scale-105 rounded-xl" src="img/Peliculas/underworld.jpeg" alt=""></a>
+                    <h6 class="" >La Novia</h6>
+                    <h6 class="" >13/02/2019</h6>
+                </figure>
+            </div>
+
+            <div class="flex justify-start md:ml-3">
+                <h3 class="text-yellow-100 hidden md:contents font-extrabold">Series del Genero</h3>
+            </div>
+            <div class="bg-yellow-200 bg-opacity-30 m-1 border-1 border-yellow-600 rounded-xl flex flex-col md:flex-row flex-nowrap justify-start items-center md:items-start text-xs text-center text-white">
+                <figure class="m-1">
+                    <a href="detail-serie.html"><img class="w-30 md:w-40 h-30 md:h-60 hover:scale-105 rounded-xl" src="img/Peliculas/unbroken.jpeg" alt=""></a>
+                    <h6 class="" >Hannibal Lexter</h6>
+                    <h6 class="" >30/01/2015</h6>
+                </figure>
+                <figure class="m-1">
+                    <a href="detail-serie.html"><img class="w-30 md:w-40 h-30 md:h-60 hover:scale-105 rounded-xl" src="img/Peliculas/troya.jpeg" alt=""></a>
+                    <h6 class="" >Bloonde</h6>
+                    <h6 class="" >31/05/2021</h6>
+                </figure>
+            </div>
+
         </div>
     </main>
+
 
     <footer class=" text-sm md:text-base text-yellow-300 bg-black flex justify-around flex-col md:flex-row pt-2 pb-4">
         <div class="text-center">
