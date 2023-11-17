@@ -20,84 +20,87 @@
         }
       </script>
 </head>
-<body class="">
 
-    <header class="text-yellow-300 bg-black border-2 border-red-600">
-        <div class="bg-black border-4 border-red-600 flex justify-center flex-col md:flex-row items-center">
-            <img class="w-60 md:w-32 " src="img/Logo/logo2.jpeg" alt="Logo">
-            <h1 class="text-5xl hidden md:contents">Movies & Series WEBSTORE.</h1>
+<body class="bg-cinema">
+
+    <header class="text-yellow-500 p-0">
+        <div class="bg-black flex justify-around flex-row md:flex-row items-center text-center mb-2 pt-2 pb-2">
+            <img class="w-32 md:w-32 hover:animate-spin" src="img/Logo/logo2.jpeg" alt="Logo">
+            <h1 class="text-5xl hidden md:contents font-bold">Movies & Series WEBSTORE</h1>
+            <img class="w-32 md:w-32 animate-pulse" src="img/Logo/camara.png" alt="Logo">
         </div>
-        <div class=" bg-black border-1 border-red-300 flex justify-between flex-col md:flex-row items-center">
-            <form class="border-4 border-red-600 action="">
-                <label class="text-white" for="buscar"> Buscar: </i> </label>
-                <input class="text-black" type="text" name="buscar">
-                <a class="" href="search-results.html"><i class="fa-solid fa-search"></i></a>
-            </form>
-            <nav class="border-4 border-red-600 flex list-none"> 
-                <li class=""> <a href="favorite.html">Favoritos</a> </li>
-                <li class="ml-5"> <a href="genres.html">Generos</a> </li>
-                <li class="ml-5"> <a href="index.html">Home</a> </li>
+        <div class="bg-black flex justify-between flex-col md:flex-row items-center p-2 ml-2 mr-2 rounded-xl mb-2">
+            <nav class="flex mb-2 md:mb-0 list-none "> 
+                <li class="border-2 border-yellow-600 rounded-xl hover:scale-110"> <a class="p-3" href="favorite.html">Favoritos</a> </li>
+                <li class="border-2 border-yellow-600 rounded-xl ml-5 hover:scale-110 bg-yellow-200 text-black"> <a class="p-3" href="genres.html">Generos</a> </li>
+                <li class="border-2 border-yellow-600 rounded-xl ml-5 hover:scale-110"> <a class="p-3" href="index.html">Home</a> </li>
             </nav>
+            <form class="w-full flex flex-row justify-center md:justify-end " action="">
+                <label class="text-yellow-300 mr-2" for="buscar"> Buscar : </i> </label>
+                <input class="bg-yellow-50 text-black mr-2" type="text" name="buscar">
+                <a class="pl-1 pr-2" href="search-results.html"><i class="fa-solid fa-search hover:scale-150"></i></a>
+            </form>
         </div>
-
     </header>
 
-    <main class="bg-cinema text-yellow-300">
-        <h1 class="text-white">Relacion de Generos</h1>
-        <div class="flex flex-row justify-between p-5">
+    <main class="text-yellow-300">
+        
+        <div class="flex flex-row justify-around p-5">
             <div class="flex flex-col justify-start p-5">
-                <h2 class="text-white">Peliculas</h2>
+                <h2 class="text-white font-bold">Generos de Peliculas</h2> <br>
                 <ul>
-                    <li><a href="detail-genres.html">Accion</a></li>
-                    <li><a href="detail-genres.html">Aventuras</a></li>
-                    <li><a href="detail-genres.html">Catastrofes</a></li>
-                    <li><a href="detail-genres.html">Ciencia Ficcion</a></li>
-                    <li><a href="detail-genres.html">Comedia</a></li>
-                    <li><a href="detail-genres.html">Documentales</a></li>
-                    <li><a href="detail-genres.html">Drama</a></li>
-                    <li><a href="detail-genres.html">Fantasia</a></li>
-                    <li><a href="detail-genres.html">Musical</a></li>
-                    <li><a href="detail-genres.html">Suspense</a></li>
-                    <li><a href="detail-genres.html">Terror</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Accion</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Aventuras</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Catastrofes</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Ciencia Ficcion</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Comedia</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Documentales</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Drama</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Fantasia</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Musical</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Suspense</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Terror</a></li>
                 </ul>
             </div>
             <div class="flex flex-col justify-start p-5">
-                <h2 class="text-white">Series</h2>
+                <h2 class="text-white font-bold">Generos de Series</h2> <br>
                 <ul>
-                    <li><a href="detail-genres.html">Accion</a></li>
-                    <li><a href="detail-genres.html">Aventura</a></li>
-                    <li><a href="detail-genres.html">Ciencia Ficcion</a></li>
-                    <li><a href="detail-genres.html">Comedia</a></li>
-                    <li><a href="detail-genres.html">Dibujos</a></li>
-                    <li><a href="detail-genres.html">Drama</a></li>
-                    <li><a href="detail-genres.html">Historica</a></li>
-                    <li><a href="detail-genres.html">Terror</a></li>
-                    <li><a href="detail-genres.html">Thriller</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Accion</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Aventura</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Ciencia Ficcion</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Comedia</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Dibujos</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Drama</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Historica</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Terror</a></li>
+                    <li class="hover:border-2 hover:border-yellow-600 hover:rounded-xl hover:bg-yellow-200 hover:text-black hover:pl-3 hover:pr-3"><a href="detail-genres.html">Thriller</a></li>
                 </ul>
             </div>
         </div>
     </main>
 
-    <footer class="text-yellow-300 border-4 border-red-300 bg-black flex justify-between flex-col md:flex-row">
-        <div class="border-4 border-red-600 text-center">
-            <h3 class="text-white">Siguenos en redes sociales</h3>
+    <footer class=" text-sm md:text-base text-yellow-300 bg-black flex justify-around flex-col md:flex-row pt-2 pb-4">
+        <div class="text-center">
+            <h3 class="">Siguenos en redes sociales</h3>
             <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
             <a href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
             <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
             <a href="https://www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
             <a href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
         </div>
-        <div class="border-4 border-red-600 text-center">
-            <a href="#" target="_blank"> <i class="fa-solid fa-copyright"></i> 2023 ABC Studios</a>
+        <br>
+        <div class="text-center text-xs">
+            <a class="font-bold text-base" href="#" target="_blank"> <i class="fa-solid fa-copyright"></i> 2023 ABC Studios</a>
             <h4 >Andres Blanes Castillo</h4>
             <h4 >C/Chile 44, Las Rozas de Madrid 28290</h4>
         </div>
-        <div  class="border-4 border-red-600 text-center">
+        <br>
+        <div  class="text-center ">
         <h3>Contacta con nosotros</h3>        
             <a href="https://www.whatsup.com" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
             <a href="mailto:ablanes@coit.es" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>
         </div>
-        
+        <br>
     </footer>
 
 </body>
